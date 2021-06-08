@@ -1,0 +1,32 @@
+// >>> inputs <<<
+input {
+  margin: 1rem;
+  border: 0.2px solid $a2;
+  padding: 0.4rem;
+  border-radius: 5px;
+  &:focus {
+    border: 0.2px solid $a2;
+  }
+} // >>> buttons <<<
+
+button {
+  border: 0.2px solid $a2;
+  padding: 0.4rem;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+    background-color: $a2;
+  }
+}
+
+// >>> forms <<<
+form {
+  border-radius: 10px;
+  width: 50vw;
+  background: $a4;
+  margin: 1rem;
+  padding: 1rem;
+  @include flex-box;
+}
+
+// >>> lists <<<

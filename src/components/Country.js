@@ -2,12 +2,25 @@ import React from "react";
 
 const Country = ({ result }) => {
   const land = result.map((obj, i) => {
-    const { name, flag, capital } = obj;
+    console.log(obj);
+    const { name, flag, capital, region, area, population, nativeName } = obj;
     return (
-      <div key={i}>
-        <h2>{name}</h2>
-        <h4>{capital}</h4>
-        <img className="flag" src={flag} alt="${name} flag" />
+      <div className="country" key={i}>
+        <h2>
+          {name} ({nativeName})
+        </h2>
+        <h3>{capital}</h3>
+        <img className="flag" src={flag} alt="country flag" />
+        <div>
+          <b>Region: </b> {region}
+        </div>
+        <div>
+          <b>Area: </b> {new Intl.NumberFormat("de-DE").format(area)} km²
+        </div>
+        <div>
+          <b>Population: </b>{" "}
+          {new Intl.NumberFormat("de-DE").format(population)}
+        </div>
       </div>
     );
   });

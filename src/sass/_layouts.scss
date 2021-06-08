@@ -1,0 +1,39 @@
+// >>> BasicSetup <<<
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include flex-box;
+  background-color: $a1;
+  color: $a5;
+}
+h1 {
+  font-family: "Abril Fatface", serif;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  margin-top: 5rem;
+  @include flex-box;
+  font-size: 4rem;
+  color: $a4;
+  text-shadow: $a2 0.2rem 0.2rem 0.2rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+// >>> Header <<<
+
+// >>> MainPart <<<
+.country {
+  @include flex-box;
+  flex-direction: column;
+  .flag {
+    width: 25vw;
+  }
+}
+// >>> Footer <<<
