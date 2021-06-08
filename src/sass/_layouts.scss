@@ -3,37 +3,66 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Work Sans", sans-serif;
+
+  color: $a5;
 }
 
 body {
-  @include flex-box;
-  background-color: $a1;
   color: $a5;
+  @include flex-box;
+}
+.main {
+  background-color: $a2;
+  border-radius: 15px;
+  margin-top: 5rem;
+  padding: 5rem;
 }
 h1 {
   font-family: "Abril Fatface", serif;
   letter-spacing: 0.1rem;
   font-weight: 500;
-  margin-top: 5rem;
+  // margin-top: 2rem;
   @include flex-box;
-  font-size: 4rem;
+  font-size: 4.9vw;
   color: $a4;
-  text-shadow: $a2 0.2rem 0.2rem 0.2rem;
+  text-shadow: $a1 0.2rem 0.2rem 0.2rem;
 }
 h2 {
-  font-size: 2rem;
+  font-family: "Abril Fatface", serif;
+  letter-spacing: 0.05rem;
+  color: $a2;
+  font-weight: 500;
+  font-size: 3.5vw;
+  text-align: center;
 }
 h3 {
+  font-family: "Abril Fatface", serif;
+  font-weight: 500;
   font-size: 1.5rem;
+}
+div {
+  font-size: 1.3rem;
+  padding: 0.1rem;
+  color: $a4;
+  b {
+    font-weight: 500;
+  }
 }
 // >>> Header <<<
 
 // >>> MainPart <<<
 .country {
   @include flex-box;
+  width: 50vw;
+  border-radius: 10px;
+  margin: 2rem;
   flex-direction: column;
+  background-color: $a1;
+  padding: 1rem;
   .flag {
-    width: 25vw;
+    padding: 1.2rem;
+    width: 30vw;
   }
 }
 // >>> Footer <<<

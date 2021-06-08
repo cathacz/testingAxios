@@ -30,17 +30,19 @@ const App = () => {
   if (loading) return <Loading />;
   return (
     <React.Fragment>
-      <h1>Know your Countries</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={userInput}
-          onChange={handleChange}
-          placeholder="country?"
-        />
-        <button type="submit">Search</button>
-      </form>
-      <Country result={result} />
+      <div className="main">
+        <h1>Know your Countries</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            value={userInput}
+            onChange={handleChange}
+            placeholder="country?"
+          />
+          <button type="submit">Search</button>
+        </form>
+        <Country result={result} />
+      </div>
     </React.Fragment>
   );
 };

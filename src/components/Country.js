@@ -7,7 +7,8 @@ const Country = ({ result }) => {
     return (
       <div className="country" key={i}>
         <h2>
-          {name} ({nativeName})
+          {name}
+          {/* <br /> ({nativeName}) */}
         </h2>
         <h3>{capital}</h3>
         <img className="flag" src={flag} alt="country flag" />
