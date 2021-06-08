@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/simpleSass/_layouts.scss"],"names":[],"mappings":"AACA,EACE,qBAAsB,CACtB,QAAS,CACT,SAAU","file":"main.df809a9a.chunk.css","sourcesContent":["// >>> BasicSetup <<<\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n// >>> Header <<<\n\n// >>> MainPart <<<\n\n// >>> Footer <<<\n"]}
