@@ -1,0 +1,29 @@
+// >>> fonts <<<
+
+// @font-face {
+//     font-family: "";
+//     src: url("");
+// }
+
+// >>> variables <<<
+// $nameYourVariable: giveItAValue;
+// use variable = $nameOfVariable
+
+// colors
+// https://color.adobe.com/search?q=pastelle
+
+// Anthrazit Color-Scheme:
+$a1: #f2f2f2;
+$a2: #d9cac5;
+$a3: #594d4a;
+$a4: #8c7e7b;
+$a5: #261e1c;
+
+// >>> mixins <<<
+@mixin flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// @mixin name {
+// }
