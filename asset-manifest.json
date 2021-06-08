@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/cathacz.github.io/testingAxios/static/css/main.df809a9a.chunk.css",
+    "main.js": "/cathacz.github.io/testingAxios/static/js/main.dd526d52.chunk.js",
+    "main.js.map": "/cathacz.github.io/testingAxios/static/js/main.dd526d52.chunk.js.map",
+    "runtime-main.js": "/cathacz.github.io/testingAxios/static/js/runtime-main.cdb12e71.js",
+    "runtime-main.js.map": "/cathacz.github.io/testingAxios/static/js/runtime-main.cdb12e71.js.map",
+    "static/js/2.e57552e2.chunk.js": "/cathacz.github.io/testingAxios/static/js/2.e57552e2.chunk.js",
+    "static/js/2.e57552e2.chunk.js.map": "/cathacz.github.io/testingAxios/static/js/2.e57552e2.chunk.js.map",
+    "index.html": "/cathacz.github.io/testingAxios/index.html",
+    "static/css/main.df809a9a.chunk.css.map": "/cathacz.github.io/testingAxios/static/css/main.df809a9a.chunk.css.map",
+    "static/js/2.e57552e2.chunk.js.LICENSE.txt": "/cathacz.github.io/testingAxios/static/js/2.e57552e2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cdb12e71.js",
+    "static/js/2.e57552e2.chunk.js",
+    "static/css/main.df809a9a.chunk.css",
+    "static/js/main.dd526d52.chunk.js"
+  ]
+}
