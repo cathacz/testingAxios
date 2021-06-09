@@ -1,6 +1,8 @@
 import React from "react";
 
 const Country = ({ result, getCountry }) => {
+  console.log(result);
+  console.log(getCountry);
   const land = result.map((obj, i) => {
     console.log(obj);
     const { name, flag, capital, region, area, population, borders } = obj;
