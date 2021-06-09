@@ -39,14 +39,20 @@ h2 {
 h3 {
   font-family: "Abril Fatface", serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 div {
-  font-size: 1.3rem;
+  font-size: 1.3vw;
   padding: 0.1rem;
   color: $a4;
   b {
     font-weight: 500;
+  }
+  i {
+    font-style: normal;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 // >>> Header <<<

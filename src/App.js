@@ -16,7 +16,7 @@ const App = () => {
 
   const getCountry = (status, countryName) => {
     let textToUrl = encodeURIComponent(countryName);
-    let endPoint = `https://restcountries.eu/rest/v2/${status}/${textToUrl}`;
+    let endPoint = `https://restcountries.eu/rest/v2/name/${status}/`;
 
     // fetch(endPoint)
     // .then((res)=> res.json())
@@ -31,8 +31,15 @@ const App = () => {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    getCountry("name", userInput);
-    setUserInput("");
+    let textToURl = encodeURIComponent(userInput);
+    let endPoint = `https://restcountries.eu/rest/v2/name/${textToURl}`;
+
+    // old school fetch: (much more then axios)
+    // fetch(endPoint).then((res)=>res.json()).then((data)=>setResult(data));
+
+    axios(endPoint)
+      .then(({ data }) => setResult(data))
+      .catch(console.error(`Nope – you took a wrong turn somewhere`));
   }
   if (loading) return <Loading />;
 
