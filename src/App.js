@@ -16,7 +16,7 @@ const App = () => {
 
   const getCountry = (code) => {
     // let textToUrl = encodeURIComponent(countryName);
-    let endPoint = `https://restcountries.eu/rest/v2/name/${code}/`; //this is the correct line to get the country by code but it will give me the error that in Country.js "result.map" in line 6 is NOT a freaking function, BUT if I set the url part to .../name/${code} I get the seyshells next to austria...
+    let endPoint = `https://restcountries.eu/rest/v2/alpha/${code}/`; //this is the correct line to get the country by code but it will give me the error that in Country.js "result.map" in line 6 is NOT a freaking function, BUT if I set the url part to .../name/${code} I get the seyshells next to austria...
     console.log(code.toLowerCase());
 
     // fetch(endPoint)
