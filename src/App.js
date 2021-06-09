@@ -14,20 +14,28 @@ const App = () => {
     }, 1000);
   }, []);
 
+  const getCountry = (status, countryName) => {
+    let textToUrl = encodeURIComponent(countryName);
+    let endPoint = `https://restcountries.eu/rest/v2/${status}/${textToUrl}`;
+
+    // fetch(endPoint)
+    // .then((res)=> res.json())
+    // .then((data)=>setResults(data))
+
+    axios(endPoint)
+      .then(({ data }) => setResult(data))
+      .catch((err) => console.log(`Your had an ${err}`));
+  };
   function handleChange(e) {
     setUserInput(e.target.value);
   }
   function handleSubmit(e) {
     e.preventDefault();
-    let textToURl = encodeURIComponent(userInput);
-    let endPoint = `https://restcountries.eu/rest/v2/name/${textToURl}`;
-
-    axios(endPoint)
-      .then(({ data }) => setResult(data))
-      .catch(console.error(`Nope – you took a wrong turn somewhere`));
+    getCountry("name", userInput);
+    setUserInput("");
   }
-  //   State          Component
   if (loading) return <Loading />;
+
   return (
     <React.Fragment>
       <div className="main">
@@ -41,10 +49,9 @@ const App = () => {
           />
           <button type="submit">Search</button>
         </form>
-        <Country result={result} />
+        <Country result={result} getCountry={getCountry} />
       </div>
     </React.Fragment>
   );
 };
-
 export default App;

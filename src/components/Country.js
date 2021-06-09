@@ -1,15 +1,12 @@
 import React from "react";
 
-const Country = ({ result }) => {
+const Country = ({ result, getCountry }) => {
   const land = result.map((obj, i) => {
     console.log(obj);
-    const { name, flag, capital, region, area, population, nativeName } = obj;
+    const { name, flag, capital, region, area, population, borders } = obj;
     return (
       <div className="country" key={i}>
-        <h2>
-          {name}
-          {/* <br /> ({nativeName}) */}
-        </h2>
+        <h2>{name}</h2>
         <h3>{capital}</h3>
         <img className="flag" src={flag} alt="country flag" />
         <div>
@@ -21,6 +18,14 @@ const Country = ({ result }) => {
         <div>
           <b>Population: </b>{" "}
           {new Intl.NumberFormat("de-DE").format(population)}
+        </div>
+        <div>
+          <b>Borders:</b>
+          {borders.map((border, i) => (
+            <i key={i} onClick={() => getCountry(border)}>
+              &nbsp;&nbsp; {border}
+            </i>
+          ))}
         </div>
       </div>
     );
