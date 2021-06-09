@@ -1,7 +1,7 @@
 {
-  "name": "axios",
+  "name": "testingAxios",
   "version": "0.1.0",
-  "homepage": "https:cathacz.github.io/testingAxios",
+  "homepage": "https://cathacz.github.io/testingAxios/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
